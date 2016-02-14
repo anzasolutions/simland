@@ -1,0 +1,22 @@
+
+<!-- <div id="toggle" style="display: block; float: right;">
+	<a href="<?php echo BASE_URL; ?>register" style="margin-left: 12px; cursor: pointer; font-weight: bold; ">Rejestracja</a>
+	<a onclick="return toggle();" style="margin-left: 12px; cursor: pointer; font-weight: bold; ">Zaloguj</a>
+</div> -->
+
+<div id="left" style="width: 324px; margin: 0px 0 0 0px; float: right;<!-- display:none -->">
+	<form action="<?php echo BASE_URL; ?>login/auth" method="POST">
+		<input type="text" name="login_name" class="edit-input-small" style="width: 110px; margin: 0 0 0 10px; color: #4b4b4b; border: 1px #02546E solid; float: left;" value="login" onblur="if(this.value == '') { this.value='login'}" onfocus="if (this.value == 'login') {this.value=''}">
+		<input type="text" name="login_pass" class="edit-input-small" style="width: 110px; margin: 0 0 0 7px; color: #4b4b4b; border: 1px #02546E solid; float: left;" value="has&#322;o" onblur="if(this.value == '') { this.value='has&#322;o'; this.type='text';}" onfocus="if (this.value == 'has&#322;o') {this.value=''; this.type='password';}">
+		<div id="mailHeader" style="width: 10px; float: left; margin: 0; padding: 0;">
+			<input type="submit" name="submit" value="zaloguj" class="form-send-login" />
+			<input type="hidden" name="previous" value="<?php echo $_SERVER['HTTP_REFERER']; ?>">
+		</div>
+		<div style="float: left; margin: 2px 0; height: 18px; width: 330px; font-size: 11px;">
+			<input type="checkbox" name="login_remember" style="width: 11px; margin: 3px 6px 0 22px; float: left;" />
+			<div style="float: left;">zapami&#281;taj mnie</div>
+			<div style="float: left; margin: 0 0 0 29px; font-size: 11px;"><a href="<?php echo BASE_URL; ?>login/reminder">nie pamiętasz hasła?</a></div>
+            <input type="hidden" name="islogin" value="true">
+		</div>
+	</form>
+</div>

@@ -1,0 +1,8 @@
+<div class="avatar">
+<a href="<?php echo BASE_URL; ?>profile/<?php echo $user_id; ?>">
+<img src="<?php echo $user_avatar; ?>">
+</a>
+</div><?php if (isset($eco)) { echo $eco; } ?>
+Witaj, <span style="color: #ffffff; font-weight: bold;"><?php echo $user_firstname; ?> <?php echo $user_lastname; ?></span>!
+<br />
+<a href="<?php echo BASE_URL; ?>profile/edit">edytuj profil</a> / <a href="<?php echo BASE_URL; ?>logout">wyloguj</a>

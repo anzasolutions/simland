@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder>
+<location id="1">
+	<path>core</path>
+</location>
+<location id="2">
+	<path>config</path>
+</location>
+<location id="3">
+	<path>controllers</path>
+</location>
+<location id="4">
+	<path>db</path>
+</location>
+<location id="5">
+	<path>models</path>
+</location>
+<location id="6">
+	<path>display/views</path>
+</location>
+<location id="7">
+	<path>display/html/builders</path>
+</location>
+<location id="8">
+	<path>display/html/generators</path>
+</location>
+<location id="9">
+	<path>display/html/validators</path>
+</location>
+<location id="10">
+	<path>utils</path>
+</location>
+<location id="11">
+	<path>dao</path>
+</location>
+<location id="11">
+	<path>vo</path>
+</location>
+<location id="12">
+	<path>enums</path>
+</location>
+</folder>

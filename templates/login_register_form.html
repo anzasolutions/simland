@@ -1,0 +1,82 @@
+<div id="reg_form_box">
+<div id="clear"></div>
+	<form action="<?php echo BASE_URL; ?>login/register" id="regform" method="POST" acceptcharset="utf-8">
+	
+		<div class="label" style="<?php echo $register_firstname_error_style; ?>">Imię:</div>
+		<div class="field_container">
+			<input id="register_firstname" name="register_firstname" type="text" value="<?php if (isset($register_firstname)) { echo $register_firstname; } ?>" class="input" autocomplete="off">
+			<span class="hint">Tutaj wpisz swoje imię.<span class="hint-pointer">&nbsp;</span></span>
+		</div><span id="error"></span>
+		<div id="clear"></div>
+		
+		<div class="label" style="<?php echo $register_lastname_error_style; ?>">Nazwisko:</div>
+		<div class="field_container">
+			<input name="register_lastname" type="text" value="<?php if (isset($register_firstname)) { echo $register_lastname; } ?>" class="input" autocomplete="off">
+			<span class="hint">Tutaj wpisz swoje nazwisko.<span class="hint-pointer">&nbsp;</span></span>
+		</div>
+		<div id="clear"></div>
+		
+		<div class="label" style="<?php echo $register_login_error_style; ?>">Login:</div>
+		<div class="field_container">
+			<input name="register_login" type="text" value="<?php if (isset($register_firstname)) { echo $register_login; } ?>" class="input" autocomplete="off">
+			<span class="hint">Musi zawierać od 2 do 32 znaków.<span class="hint-pointer">&nbsp;</span></span>
+		</div>
+		<div id="clear"></div>
+		
+		<div class="label" style="<?php echo $register_email_error_style; ?>">Adres email:</div>
+		<div class="field_container">
+			<input name="register_email" type="text" value="<?php if (isset($register_firstname)) { echo $register_email; } ?>" class="input" autocomplete="off">
+			<span class="hint">Tutaj wpisz swój istniejący adres e-mail.<span class="hint-pointer">&nbsp;</span></span>
+		</div>
+		<div id="clear"></div>
+		
+		<div class="label" style="<?php echo $register_password_error_style; ?>">Hasło:</div>
+		<div class="field_container">
+			<input name="register_password" type="password" value="<?php if (isset($register_firstname)) { echo $register_password; } ?>" class="input" autocomplete="off">
+			<span class="hint">Musi składać się ze znaków i liczb. Zachowaj w tajemnicy!<span class="hint-pointer">&nbsp;</span></span>
+		</div>
+		<div id="clear"></div>
+		
+		<div class="label" style="<?php echo $register_year_error_style; ?><?php echo $register_month_error_style; ?><?php echo $register_day_error_style; ?>">Data urodzenia:</div>
+		<div class="field_container">
+			<?php echo $selectDate; ?>
+			<span class="hint">Chcielibyśmy wiedzieć ile masz lat.<span class="hint-pointer">&nbsp;</span></span>
+		</div>
+		<div id="clear"></div>
+		
+		<div class="label" style="<?php echo $register_gender_error_style; ?>">Płeć:</div>
+		<div class="field_container">
+			<?php echo $selectGender; ?>
+			<div></div>
+			<span class="hint">Jakiej jesteś płci?<span class="hint-pointer">&nbsp;</span></span>
+		</div>
+		<div id="clear"></div>
+		
+		<!-- <div class="label">Kod:</div>
+		<div class="field_container">
+			<img id="image" src="<?php echo BASE_URL; ?>lib/securimage/securimage_show.php" alt="CAPTCHA Image" style="float: left; margin: 0 14px 0 0;" />
+			<a href="#" onclick="document.getElementById('image').src = '<?php echo BASE_URL; ?>lib/securimage/securimage_show.php?sid=' + Math.random(); return false">Nowy kod</a>
+		</div>
+		<div id="clear"></div>
+		
+		<div class="label">Wpisz kod:</div>
+		<div class="field_container">
+			<input name="register_captcha_code" maxlength="7" type="text" class="input" style="<?php echo $captcha_code; ?>">
+		</div>
+		<div id="clear"></div> -->
+		
+		<!-- <div id="info" style="display:none;">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim neque nec dui pharetra ornare. Pellentesque congue dignissim blandit. In aliquam rhoncus lorem vel porttitor. Cras pharetra sagittis auctor. Praesent fermentum massa metus, eu tempus velit. Proin eu sapien vel leo sagittis porttitor vel nec metus. Nam blandit erat in sapien eleifend placerat. Etiam sed mauris neque, eu semper eros. Sed tempus nulla sed leo congue eu facilisis nisi volutpat. Phasellus a urna augue, blandit tempus justo. Sed rhoncus suscipit convallis. Duis odio massa, aliquam at tincidunt sed, rhoncus vitae mi. Nunc facilisis faucibus massa, feugiat accumsan lacus posuere non. Cras in tempor urna. Donec sed lorem tellus. Fusce ornare tortor sit amet urna vulputate eu auctor urna commodo. Nunc mi lectus, lacinia nec ultricies feugiat, fermentum eu lacus. Donec mattis volutpat sem eu tincidunt. Praesent et diam ut mauris tempus fringilla.
+			Vivamus sed lectus neque. Aliquam erat volutpat. Duis aliquet volutpat nibh id semper. Curabitur ut lacus neque. Suspendisse eget nulla in nunc convallis dapibus eget eu elit. In hac habitasse platea dictumst. Integer condimentum ante eget est bibendum id consectetur nulla sollicitudin. Integer tortor tortor, feugiat non sodales non, bibendum sed ante. Maecenas vulputate arcu nec nulla ornare ac tincidunt tellus rhoncus. Maecenas id semper leo. Sed nisl lacus, ultricies sed hendrerit quis, tincidunt ac ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam eu nibh et augue fringilla condimentum sit amet vel mauris.
+		</div> -->
+		<div id="mailHeader" style="float: left;">
+			<span class="regulamin" style="float: left; padding: 14px 0 0 0;">
+				<input type="checkbox" name="register_agreement" value="yes" checked style="margin: 0 0 0 26px; <?php echo $register_agreement_error_style; ?>"  />
+			</span>
+			<span class="regulamin" style="float: left; padding: 13px 0 0 10px; <?php echo $register_agreement_error_style; ?>">
+				Akceptuję <a href="#info" rel="facebox">regulamin</a> serwisu
+			</span>
+			<input type="submit" id="register_submit" value="Zarejestruj" class="form-send" style="margin-right: 14px;" />
+		</div>
+	</form>
+</div>

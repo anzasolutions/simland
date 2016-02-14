@@ -1,0 +1,48 @@
+<div id="add_new_form_box">
+<div id="clear"></div>
+	<form enctype="multipart/form-data" action="<?php echo URL_GALLERY; ?>addphoto/" id="regform" method="POST" accept-charset="UTF-8">
+		<div class="field_container">
+			<label for="gallery_file" class="label">Plik ze zdjeciem:</label>
+			<input id="gallery_file" name="gallery_file" size="46" type="file" class="input">
+		</div>
+		<div id="clear"></div>
+		
+		<div class="field_container">
+			<label for="choose_album" class="label">Dodaj do istniejacego albumu:</label>
+			<?php echo $add_to_existing_album; ?>
+			<!-- <select id="choose_album" name="choose_album" class="select">
+			<option value="3" class="option">Lolo</option>
+			<option value="2" class="option">Album główny</option> -->
+			</select>
+		</div>
+		<div id="clear"></div>
+		
+		<div class="field_container">
+			<label for="gallery_new_album" class="label">Dodaj do nowego albumu:</label>
+			<input name="gallery_new_album" type="text" value="<?php echo $gallery_album; ?>" class="input">
+		</div>
+		<div id="clear"></div>
+		
+		<div class="field_container">
+			<label for="gallery_desc" class="label">Opis zdjęcia: <span>(wypełnienie nieobowiązkowe)</span></label>
+			<textarea name="gallery_desc" type="text" value="<?php echo $gallery_desc; ?>" rows="5" cols="40" class="description"></textarea>
+		</div>
+		<div id="clear"></div>
+		
+		<div class="field_container">
+			<p class="options">
+				<input id="gallery_main" name="gallery_main" type="checkbox" value="1">
+				<label for="gallery_main">Ustaw jako zdjęcie główne</label>
+			</p>
+			<p class="options">
+				<input id="gallery_mini" name="gallery_mini" type="checkbox" value="1">
+				<label for="gallery_mini">Ustaw jako miniaturkę albumu</label>
+			</p>
+		</div>
+		<div id="mailHeader" style="float: none;">
+			<input type="submit" id="gallery_submit" value="Dodaj" class="form-send2" style="margin-right: 14px;" />
+			<input type="hidden" name="form_sent" value="1" />
+		</div>
+		<div id="clear"></div>
+	</form>
+</div>

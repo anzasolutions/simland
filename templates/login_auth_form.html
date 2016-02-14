@@ -1,0 +1,27 @@
+<div id="reg_form_box">
+<div id="clear"></div>
+	<form action="<?php echo BASE_URL; ?>login/auth" id="regform" method="POST" acceptcharset="utf-8">
+		<div class="label2" style="<?php echo $login_name_error_style; ?>">Login:</div>
+		<div class="field_container">
+			<input id="login_name" name="login_name" type="text" value="<?php if (isset($login_name)) { echo $login_name; } ?>" class="input" autocomplete="off">
+			<span class="hint"><?php echo $login_name_hint; ?><span class="hint-pointer">&nbsp;</span></span>
+		</div><span id="error"></span>
+		<div id="clear"></div>
+		
+		<div class="label2" style="<?php echo $login_pass_error_style; ?>">Hasło:</div>
+		<div class="field_container">
+			<input id="login_pass" name="login_pass"type="password" value="<?php if (isset($login_pass)) { echo $login_pass; } ?>" class="input" autocomplete="off">
+			<span class="hint"><?php echo $login_pass_hint; ?><span class="hint-pointer">&nbsp;</span></span>
+		</div>
+		<div id="clear"></div>
+		
+		<div id="mailHeader" style="float: left;">
+			<span class="regulamin" style="float: left; padding: 14px 0 0 0px;">
+				<input type="checkbox" name="login_remember" style="margin: 0 0 0 48px;"  />
+			</span>
+			<span class="regulamin" style="float: left; padding: 13px 0 0 10px;">
+				Zapamiętaj mnie
+			</span>
+			<input type="submit" id="register_submit" name="login_remember" value="Zaloguj się" class="form-send" style="margin-right: 36px;" />
+		</div>
+</div>

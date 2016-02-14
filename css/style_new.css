@@ -1,0 +1,443 @@
+
+/*
+ * General settings
+ */
+
+.full_width
+{
+    width: 100%;
+}
+
+.error
+{
+    border: 1px #DD3C10 solid;
+    background-color: #FFEBE8;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #A62A2E;
+	margin: 10px 0 10px 0;
+}
+
+.success
+{
+    border: 1px #4E9A06 solid;
+    background-color: #C7FF8F;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #4E9A06;
+	margin: 10px 0 10px 0;
+}
+
+.noscript
+{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ae0000;
+	padding: 5px 0 5px 0;
+}
+
+/*
+ * Registration form
+ */
+
+#reg_form_box
+{
+	width: 100%;
+}
+
+#reg_form_box a
+{
+	color: #00759b;
+}
+
+#reg_form_box .label, #reg_form_box .label2
+{
+	width: 100px;
+	float: left;
+	text-align: right;
+	margin: 3px 10px 0 0;
+	color: #666666;
+}
+
+#reg_form_box .label2
+{
+	width: 70px;
+}
+
+#reg_form_box .field_container
+{
+	height: 20px;
+}
+
+#reg_form_box .input
+{
+	width: 186px;
+	border: 1px #cccccc solid;
+	padding: 3px;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+#reg_form_box .select
+{
+	border: 1px #cccccc solid;
+	padding: 3px;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+#reg_form_box .option
+{
+	padding: 0 0 0 3px;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+#reg_form_box .radio
+{
+	width: 90px;
+	float: left;
+}
+
+#reg_form_box_border, #auth_form_box_border
+{
+    padding: 1px;
+    border: 1px #E4E4E4 dotted;
+}
+
+#reg_form_box_border .form_background, #auth_form_box_border .form_background
+{
+    background-color: #FCFCFC;
+}
+
+/*
+ * Gallery: Add new photo form
+ */
+
+#add_new_form_box
+{
+	width: 100%;
+}
+
+#add_new_form_box a
+{
+	color: #00759b;
+}
+
+#add_new_form_box .label
+{
+	width: 100%;
+	margin: 3px 10px 0 0;
+	color: #666666;
+}
+
+#add_new_form_box .label2
+{
+	width: 70px;
+}
+
+#add_new_form_box .field_container
+{
+	/* height: 20px; */
+}
+
+#add_new_form_box .input
+{
+	width: 97%;
+	border: 1px #cccccc solid;
+	padding: 3px;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+#add_new_form_box .select
+{
+	border: 1px #cccccc solid;
+	padding: 3px;
+	font-size: 11px;
+	font-family: tahoma;
+	width: 99%;
+}
+
+#add_new_form_box .option
+{
+	padding: 0 0 0 3px;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+#add_new_form_box .radio
+{
+	width: 90px;
+	float: left;
+}
+
+#add_new_form_box .description
+{
+	width: 97%;
+	height: 100px;
+	float: left;
+	font-size: 11px;
+	font-family: tahoma;
+	padding: 3px;
+	border: 1px #cccccc solid;
+}
+
+#add_new_form_box_border
+{
+    padding: 1px;
+    border: 1px #E4E4E4 dotted;
+}
+
+#add_new_form_box_border .form_background
+{
+    background-color: #FCFCFC;
+}
+
+/*
+ * Registration tooltip
+ */
+
+/* All form elements are within the definition list for this example */
+dl
+{
+	font:normal 12px/15px Arial;
+    position: relative;
+    width: 350px;
+}
+
+dt
+{
+    clear: both;
+    float:left;
+    width: 130px;
+    padding: 4px 0 2px 0;
+    text-align: left;
+}
+
+dd
+{
+    float: left;
+    width: 200px;
+    margin: 0 0 8px 0;
+    padding-left: 6px;
+}
+
+/* The hint to Hide and Show */
+.hint
+{
+   	display: none;
+    position: relative;
+    right: -320px;
+	top: -16px;
+	bottom: 500px;
+    width: 100px;
+    /* margin-top: -4px; */
+    border: 1px solid #c93;
+    padding: 10px 10px;
+	margin: 0;
+    /* to fix IE6, I can't just declare a background-color,
+    I must do a bg image, too!  So I'm duplicating the pointer.gif
+    image, and positioning it so that it doesn't show up
+    within the box */
+    background: #ffc url("../images/pointer.gif") no-repeat -10px 5px;
+}
+
+/* The pointer image is hadded by using another span */
+.hint .hint-pointer
+{
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 10px;
+    height: 19px;
+    background: url("../images/pointer.gif") left top no-repeat;
+}
+
+/*
+ * Other stuff
+ */
+
+
+
+/*
+ * Album
+ */
+
+#photo-album
+{
+    /* width: 238px;
+    height: 158px;
+	background: url("../images/photo-album.png") center top no-repeat;
+	float: left; */
+}
+
+#photo-album .photo_frame, #photo-album .photo_frame2, #photo-album .photo_frame3
+{
+	width: 238px;
+	height: 178px;
+	text-align: center;
+	color: #4b4b4b;
+	float: left;
+	border: 0;
+    display: block;
+	line-height: 120%;
+	margin: 0 0 10px 0;
+}
+
+#photo-album .photo_frame
+{
+	background: url("../images/photo-album-photo.png") 54% 28% no-repeat;
+}
+
+#photo-album .photo_frame2
+{
+	background: url("../images/photo-album-nophoto.png") 54% 28% no-repeat;
+}
+
+#photo-album .photo_frame3
+{
+	width: 238px;
+}
+
+/* #photo-album .photo_frame3
+{
+	width: 190px;
+} */
+
+#photo-album .photo_frame img
+{
+	margin: 0px 0 0 3px;
+}
+
+#photo-album .photo_frame3 img
+{
+	border: 1px solid #e4e4e4;
+	padding: 4px;
+	margin: 0 0 3px 0;
+}
+
+#photo-album .photo_frame * {
+	vertical-align: middle;
+}
+
+#photo-album .photo_frame2 * {
+	vertical-align: middle;
+}
+
+#photo-album .photo_frame3 * {
+	vertical-align: middle;
+}
+
+#photo-album .photo_frame span, #photo-album .photo_frame2 span, #photo-album .photo_frame3 span {
+    display: inline-block;
+    height: 80%;
+    width: 0px;
+}
+
+#photo-album .photo_frame a, #photo-album .photo_frame2 a, #photo-album .photo_frame3 a {
+	color: #00759b;
+	font-weight: bold;
+}
+
+#photo-album .photo_frame_date
+{
+	padding: 2px 0 0 0;
+	font-size: 9px;
+}
+
+#photo-album .photo_info
+{
+	text-align: left;
+	padding: 2px 0 0 0;
+	margin: 0 10px;
+}
+
+#photo-album .photo_info_bold
+{
+	float: left;
+	margin: 0 4px 0 0;
+	font-weight: bold;
+}
+
+#photo-album .credits
+{
+	margin: 0px 0 0 0;
+}
+
+#photo-album .photo_full_size
+{
+	text-align: center;
+	margin: 20px 0;
+}
+
+/*
+ * Gallery navigation
+ */
+ 
+#gallery-navigation
+{
+	height: 24px;
+	border-bottom: 1px solid #f1f1f1;
+	width: 96%;
+	margin: 6px 20px 0 10px;
+	padding: 0 10px 0 10px;;
+}
+
+#gallery-navigation a
+{
+	color: #00759b;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#gallery-navigation a:hover
+{
+	text-decoration: underline;
+}
+ 
+#gallery-navigation .vector-left
+{
+	float: left;
+	text-align: center;
+	padding: 0 0 0 24px;
+}
+ 
+#gallery-navigation .vector-right
+{
+	float: right;
+	text-align: center;
+}
+
+/*
+ * Sub-menu
+ */
+
+#sub-menu
+{
+	height: 24px;
+	border-bottom: 1px solid #f1f1f1;
+	width: 96%;
+	margin: 6px 20px 0 10px;
+	padding: 0 10px 0 10px;
+}
+
+#sub-menu .link
+{
+	padding: 4px 0 4px 22px;
+	font-weight: bold;
+	color: #00759B;
+	margin: 0 20px 0 0;
+}
+
+#sub-menu .link a
+{
+	color: #00759B;
+}
+

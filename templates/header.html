@@ -1,0 +1,49 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl" id="simland">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-language" content="pl" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title>www.SIMLAND.pl</title>
+		<link rel="stylesheet" href="<?php echo URL_CSS; ?>style.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo URL_CSS; ?>style_new.css" type="text/css" />
+		<script src="<?php echo URL_JS; ?>utils.js" type="text/javascript"></script>
+		<script src="<?php echo URL_JS; ?>datePicker.js" type="text/javascript"></script>
+		<script src="<?php echo URL_JS; ?>jquery-1.4.2.min.js" type="text/javascript"></script>
+		<!-- <script src="<?php echo URL_JS; ?>jquery.jnotifica.min.js" type="text/javascript"></script> -->
+		<!-- <script src="<?php echo URL_JS; ?>examples.js" type="text/javascript"></script> -->
+	</head>
+	<body>
+		<noscript>
+			<div class="noscript">
+			Aby móc efektywnie korzystać z Simlandu musisz mieć włączoną obsługę JavaScript w przeglądarce!
+			</div>
+		</noscript>
+		<?php echo $top_info; ?>
+		<div id="red-back">
+			<div id="logo-back">
+				<a href="<?php echo BASE_URL; ?>">
+					<div class="link"></div>
+				</a>
+				<div class="login">
+					<span class="loguj">
+						<?php include($login_form); ?>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div id="menu-back">
+			<div id="menu">
+				<ul class="menu-list">
+					<?php echo $total_users; ?>
+				</ul>
+				<ul class="menu-list" style="float: right; padding: 0;">
+					<?php if (isset($register_link)) { echo $register_link; } ?>
+				</ul>
+			</div>
+		</div>
+		<?php if (!empty($user_menu_panel)) require $user_menu_panel; ?>
+		<div id="main">
+			<div id="clear"></div>
+			<div id="clear"></div>
